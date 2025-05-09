@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{ISO8601} %-5.5p [%-30t] .\(%file:%line\) : %m%n"/>
+		</Console>
+	</appenders>
+	<loggers>
+		<root level="INFO">
+			<appender-ref ref="console" />
+		</root>
+        <logger name="au.com.hub24.service-template-example" level="TRACE" />
+
+        <logger name="org.springframework" level="INFO" />
+        <logger name="org.springframework.security" level="DEBUG" />
+        <logger name="org.springframework.web" level="DEBUG" />
+		<logger name="springfox.documentation" level="DEBUG" />
+	</loggers>
+</Configuration>
