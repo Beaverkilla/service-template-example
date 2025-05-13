@@ -145,12 +145,11 @@
 
 	<build>
 		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-		<testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--			</plugin>-->
 			<plugin>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-maven-plugin</artifactId>
@@ -162,9 +161,9 @@
 						<plugin>spring</plugin>
 						<plugin>jpa</plugin>
 						<pluginOptions>
-							<option>all-open:annotation=jakarta.persistence.Entity</option>
-							<option>all-open:annotation=jakarta.persistence.Embeddable</option>
-							<option>all-open:annotation=jakarta.persistence.MappedSuperclass</option>
+							all-open:annotation=jakarta.persistence.Entity
+							all-open:annotation=jakarta.persistence.Embeddable
+							all-open:annotation=jakarta.persistence.MappedSuperclass
 						</pluginOptions>
 					</compilerPlugins>
 				</configuration>

@@ -33,3 +33,101 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Logs
+*.log
+# Temporary files
+*.tmp
+*~
+
+*.bak
+# Environment files (containing secrets, API keys, credentials)
+.env
+*.env
+.env.*
+
+# Local configuration that shouldn't be shared
+*.local
+
+### Docker ###
+# Docker environment specific files and directories
+
+# Common directories to exclude
+node_modules/
+bower_components/
+dist/
+
+.cache/
+# Log files
+logs/
+
+# Git-related files
+.git/
+.gitignore
+
+# Temporary files
+*.swp
+# IDE-specific files
+
+.idea/
+# Docker-specific files
+Dockerfile.*
+docker-compose.override.yml
+
+.docker/
+docker-compose.override.yaml
+docker-compose.*.yml
+docker-compose.*.yaml
+*.env.docker
+
+docker-volumes/
+.docker-sync/
+docker/data/
+docker/logs/
+docker-compose.prod.yml
+
+docker-compose.dev.yml
+docker-compose.local.yml
+# CI/CD-related files
+.dockerignore
+
+### Gradle ###
+# Gradle build tool files and directories
+
+# Gradle
+.gradle/
+gradle/
+gradlew
+
+gradlew.bat
+*.gradle
+gradle-app.setting
+.gradletasknamecache
+gradle.properties
+
+gradle-wrapper.jar
+gradle-wrapper.properties
+.gradle-cache/
+gradle-build/
+out/
+
+classes/
+*.class
+build-cache/
+.gradle/buildOutputCleanup/
+.gradle/configuration-cache/
+
+gradle/wrapper/
+gradle/caches/
+gradle/daemon/
+gradle/native/
+gradle/wrapper/dists/
+
+!gradle-wrapper.jar
+.gradle/kotlin-profile/
+.gradle/workspace-id.txt
+.gradle/notifications/
+gradle/verification-metadata.xml
+
+!src/**/build/
+*.hprof
