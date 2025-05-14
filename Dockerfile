@@ -20,5 +20,6 @@ RUN mkdir /app
 ## → this relies on your MAVEN package command building a jar 
 ## that matches *-jar-with-dependencies.jar with a single match
 COPY --from=build /home/gradle/src/build/libs/ /app/
+EXPOSE 8080
 RUN ls /app
 ENTRYPOINT ["java","-jar","/app/service-template-example-0.0.2-SNAPSHOT.jar"]

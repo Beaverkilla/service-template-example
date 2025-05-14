@@ -9,11 +9,10 @@
 		<root level="INFO">
 			<appender-ref ref="console" />
 		</root>
-        <logger name="au.com.hub24.service-template-example" level="TRACE" />
+        <logger name="au.com.hub24.servicetemplateexample" level="TRACE" />
 
         <logger name="org.springframework" level="INFO" />
         <logger name="org.springframework.security" level="DEBUG" />
         <logger name="org.springframework.web" level="DEBUG" />
-		<logger name="springfox.documentation" level="DEBUG" />
 	</loggers>
 </Configuration>

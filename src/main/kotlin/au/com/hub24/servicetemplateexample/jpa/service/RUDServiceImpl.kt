@@ -11,7 +11,7 @@ open class RUDServiceImpl<TObj : HasId, TId : Any, TRepo : JpaRepository<TObj, T
     var useCache: Boolean = false)
     : RUDService<TObj, TId, TRepo> {
 
-    val logger: Logger = LoggerFactory.getLogger(this.javaClass)
+    val logger: Logger = LoggerFactory.getLogger(this::class.java)
     var rudMap: MutableMap<TId, TObj>? = if (useCache) HashMap() else null
 
     override fun count(): Long {

@@ -13,6 +13,11 @@ private val logger: Logger = LoggerFactory.getLogger(GroundAllocatorApplication:
 fun main(args: Array<String>) {
 	logger.info("Starting Service Template Example Application. Logging is configured.")
 	logger.info("Swagger at http://localhost:8080/swagger-ui/index.html.")
+	if (!logger.isTraceEnabled) {
+		logger.warn("Failed to enable trace logging! Misconfigured!")
+	} else {
+		logger.debug("Logging is configured correctly.")
+	}
 
 	runApplication<GroundAllocatorApplication>(*args)
 }
