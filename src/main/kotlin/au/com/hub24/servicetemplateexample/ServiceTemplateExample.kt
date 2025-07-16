@@ -1,11 +1,18 @@
 package au.com.hub24.servicetemplateexample
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition
+import io.swagger.v3.oas.annotations.servers.Server
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@OpenAPIDefinition(servers = {@Server(url = "${server.servlet.context-path}", description = "Default Server URL")})
+@OpenAPIDefinition(
+	servers = [Server(
+		url = "https://service-template-example-683109210138.australia-southeast1.run.app",
+		description = "Default Server URL"
+	)]
+)
 @SpringBootApplication
 class GroundAllocatorApplication
 
