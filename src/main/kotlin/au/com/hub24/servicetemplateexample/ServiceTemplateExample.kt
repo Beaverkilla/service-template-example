@@ -11,6 +11,10 @@ import org.springframework.boot.runApplication
 	servers = [Server(
 		url = "https://service-template-example-683109210138.australia-southeast1.run.app",
 		description = "Default Server URL"
+	),
+		Server(
+		url = "http://localhost:8080",
+		description = "Localhost URL"
 	)]
 )
 @SpringBootApplication

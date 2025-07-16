@@ -6,7 +6,7 @@ plugins {
     kotlin("plugin.jpa") version "2.1.20"
 }
 
-group = "com.example"
+group = "au.com.hub24"
 version = "0.0.2-SNAPSHOT"
 
 java {
@@ -27,7 +27,7 @@ dependencies {
     implementation("org.yaml:snakeyaml")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.8")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9")
     implementation("org.hibernate.validator:hibernate-validator")
     runtimeOnly("com.h2database:h2")
     runtimeOnly("org.postgresql:postgresql")
